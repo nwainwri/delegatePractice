@@ -16,6 +16,7 @@
 		F1061CD525D0F719000ECE5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1061CD325D0F719000ECE5C /* LaunchScreen.storyboard */; };
 		F1061CE025D0F719000ECE5C /* delegatePracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061CDF25D0F719000ECE5C /* delegatePracticeTests.swift */; };
 		F1061CEB25D0F719000ECE5C /* delegatePracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061CEA25D0F719000ECE5C /* delegatePracticeUITests.swift */; };
+		F1061CFF25D0FC0D000ECE5C /* ThirtyDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061CFE25D0FC0D000ECE5C /* ThirtyDayCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		F1061CE625D0F719000ECE5C /* delegatePracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = delegatePracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1061CEA25D0F719000ECE5C /* delegatePracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = delegatePracticeUITests.swift; sourceTree = "<group>"; };
 		F1061CEC25D0F719000ECE5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1061CFE25D0FC0D000ECE5C /* ThirtyDayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirtyDayCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				F1061CC525D0F718000ECE5C /* AppDelegate.swift */,
 				F1061CC725D0F718000ECE5C /* SceneDelegate.swift */,
 				F1061CC925D0F718000ECE5C /* ViewController.swift */,
+				F1061CFE25D0FC0D000ECE5C /* ThirtyDayCell.swift */,
 				F1061CCB25D0F718000ECE5C /* Main.storyboard */,
 				F1061CD125D0F719000ECE5C /* Assets.xcassets */,
 				F1061CD325D0F719000ECE5C /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1061CFF25D0FC0D000ECE5C /* ThirtyDayCell.swift in Sources */,
 				F1061CCA25D0F718000ECE5C /* ViewController.swift in Sources */,
 				F1061CC625D0F718000ECE5C /* AppDelegate.swift in Sources */,
 				F1061CC825D0F718000ECE5C /* SceneDelegate.swift in Sources */,
