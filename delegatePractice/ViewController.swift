@@ -10,8 +10,9 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
   let tableView: UITableView = {
     let tv = UITableView()
-    tv.backgroundColor = UIColor.red
+//    tv.backgroundColor = UIColor.white
     tv.translatesAutoresizingMaskIntoConstraints = false
+    tv.separatorColor = UIColor.white
     return tv
   }()
 
@@ -25,7 +26,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
   func setupTableView() {
     tableView.delegate = self
     tableView.dataSource = self
+
     tableView.register(ThirtyDayCell.self, forCellReuseIdentifier: "cellId")
+
     view.addSubview(tableView)
 
     NSLayoutConstraint.activate([
@@ -36,6 +39,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     ])
   }
 
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return 100
+  }
+
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     //1
     return 100
@@ -44,7 +51,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     //2
     let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath) as! ThirtyDayCell
-    cell.backgroundColor = UIColor.blue
+//    cell.backgroundColor = UIColor.red
+    cell.dayLabel.text = "Day \(indexPath.row+1)"
     return cell
   }
 
